@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Labuan Ratu 7</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="bg-[#2c2724] text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <div class="text-2xl font-bold">
+        <a href="#">Web Desa</a>
+      </div>
+
+      <!-- Navbar Links -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#" class="hover:underline">Home</a></li>
+        <li><a href="#" class="hover:underline">About Us</a></li>
+        <li><a href="#" class="hover:underline">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger Button for Mobile View -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-2xl">
+          <i class="ri-menu-line"></i>
+        </button>
+      </div>
+
+      <!-- Navbar Buttons -->
+      <div class="hidden md:flex space-x-4">
+        <button class="bg-[#f3eae5] text-[#2c2724] py-2 px-4 rounded-full hover:bg-[#e0d3c8] transition">
+          <i class="ri-search-line"></i>
+        </button>
+        <button class="bg-[#f3eae5] text-[#2c2724] py-2 px-4 rounded-full hover:bg-[#e0d3c8] transition">
+          <i class="ri-shopping-bag-line"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="nav-links" class="md:hidden mt-4 space-y-2 hidden">
+      <ul class="flex flex-col space-y-2">
+        <li><a href="#" class="block py-2 px-4 bg-[#3b2d26] text-white rounded hover:bg-[#4a3a2d]">Home</a></li>
+        <li><a href="#" class="block py-2 px-4 bg-[#3b2d26] text-white rounded hover:bg-[#4a3a2d]">About Us</a></li>
+        <li><a href="#" class="block py-2 px-4 bg-[#3b2d26] text-white rounded hover:bg-[#4a3a2d]">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container pt-8">
+    <div class="outer-container flex">
+      <!-- Right Section -->
+      <div class="container__right min-w-[900px] flex-2 bg-gray-200 p-8 flex ml-8">
+        <div class="content flex-1 text-left">
+          <h4 class="mb-4 text-lg font-medium text-[#2c2724]">Lampung</h4>
+          <h2 class="mb-2 text-3xl font-bold tracking-wider text-[#2c2724]">Labuan Ratu 7</h2>
+          <h3 class="mb-4 text-lg font-semibold text-[#2c2724]">Desa Labuan Ratu 7</h3>
+          <p class="leading-7 text-[#2c2724] max-w-lg">
+            Labuhan Ratu VII adalah sebuah desa di Kecamatan Labuhan Ratu, Kabupaten Lampung Timur, Provinsi Lampung,
+            Indonesia.
+          </p>
+        </div>
+
+        <div class="images relative flex items-center justify-center h-[400px]">
+          <img src="assets/tent-1.jpg" alt="tent-1"
+            class="tent-1 absolute top-1/2 transform -translate-y-1/2 translate-x-12 max-w-[350px] rounded-lg shadow-lg" />
+          <img src="assets/tent-2.jpg" alt="tent-2"
+            class="tent-2 absolute top-1/2 transform translate-y-1/2 translate-x-1/2 max-w-[180px] rounded-lg shadow-lg" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="flex-col items-center p-24 space-y-8">
+    <div class="flex gap-8 items-center justify-center">
+      <div class="flex flex-col items-center justify-center gap-4">
+        <h4 class="text-4xl font-semibold text-primary-color mb-2">80+</h4>
+        <p class="text-xl text-dark">Berita dan Informasi</p>
+      </div>
+      <div class="border-l border-gray-300 h-24"></div>
+      <div class="flex flex-col items-center justify-center gap-4">
+        <h4 class="text-4xl font-semibold text-primary-color mb-2">200+</h4>
+        <p class="text-xl text-dark">Fasilitas Desa</p>
+      </div>
+      <div class="border-l border-gray-300 h-24"></div>
+      <div class="flex flex-col items-center justify-center gap-4">
+        <h4 class="text-4xl font-semibold text-primary-color mb-2">99+</h4>
+        <p class="text-xl text-dark">Kegiatan dan Acara</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="h-screen py-18 px-6 flex gap-8">
+    <!-- Konten utama di sisi kiri -->
+    <div class="flex-1 max-w-lg">
+      <p
+        class="max-w-max py-2 mb-2 text-base font-semibold text-primary-color border border-primary-color rounded-full">
+        Website Desa
+      </p>
+      <h2 class="text-3xl font-semibold leading-tight text-dark">
+        Apa Yang Tersedia <span class="text-blue-200">Website Desa?</span>
+      </h2>
+      <p class="text-light leading-6">
+        Website desa kami memberikan akses mudah ke berita terbaru, kegiatan mendatang, dan informasi tentang fasilitas
+        desa. Temukan layanan masyarakat, jadwal acara, dan detail wisata dengan cepat dan praktis.
+      </p>
+      <div>
+      </div>
+    </div>
+
+    <!-- Konten utama di sisi kanan -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-[600px]">
+      <!-- Container untuk Card pertama dan kedua -->
+      <div class="flex flex-col gap-4 md:col-span-1">
+        <!-- Card pertama di atas -->
+        <div
+          class="p-4 rounded-lg shadow-md w-[350px] h-[200px] flex flex-col items-center justify-center bg-white transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-100">
+          <span class="inline-block mb-4 text-2xl text-primary-color">
+            <i class="ri-pulse-line"></i>
+          </span>
+          <h4 class="text-xl font-semibold text-dark text-center">Berita Terbaru Desa</h4>
+        </div>
+
+        <!-- Card kedua di bawah -->
+        <div
+          class="z-10 p-4 rounded-lg shadow-md w-[350px] h-[200px] flex flex-col items-center justify-center bg-white transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-100">
+          <span class="inline-block mb-4 text-2xl text-primary-color">
+            <i class="ri-pencil-ruler-2-line"></i>
+          </span>
+          <h4 class="text-xl font-semibold text-dark text-center">Kegiatan dan Acara</h4>
+        </div>
+      </div>
+
+      <!-- Card ketiga di kanan (mencakup dua baris) -->
+      <div class="h-[420px] w-[350px] flex items-center justify-center">
+        <div
+          class="rounded-lg shadow-md w-full h-[200px] flex flex-col items-center justify-center bg-white transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-100">
+          <span class="inline-block mb-4 text-2xl text-primary-color">
+            <i class="ri-graduation-cap-line"></i>
+          </span>
+          <h4 class="text-xl font-semibold text-dark text-center">Fasilitas Desa Kami</h4>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <section class="flex flex-col md:flex-row items-center p-10 gap-8">
+    <!-- Image Wrapper -->
+    <div class="relative overflow-x-hidden flex-1">
+      <div id="scrolling-container" class="flex gap-4 whitespace-nowrap">
+        <!-- Card 1 -->
+        <div class="flex flex-col items-center w-[300px] h-[300px] shadow-lg p-4 bg-white inline-block">
+          <img class="w-full h-[150px] object-cover mb-2" src="assets/tent-1.jpg" alt="Aparat Desa 1" />
+          <div class="flex flex-col items-center h-1/3 justify-center">
+            <h4 class="text-xl font-semibold text-gray-900">Nama Aparat 1</h4>
+            <p class="text-gray-600">Jabatan 1</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col items-center w-[300px] h-[300px] shadow-lg p-4 bg-white inline-block">
+          <img class="w-full h-[150px] object-cover mb-2" src="assets/tent-1.jpg" alt="Aparat Desa 2" />
+          <div class="flex flex-col items-center h-1/3 justify-center">
+            <h4 class="text-xl font-semibold text-gray-900">Nama Aparat 2</h4>
+            <p class="text-gray-600">Jabatan 2</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col items-center w-[300px] h-[300px] shadow-lg p-4 bg-white inline-block">
+          <img class="w-full h-[150px] object-cover mb-2" src="assets/tent-1.jpg" alt="Aparat Desa 3" />
+          <div class="flex flex-col items-center h-1/3 justify-center">
+            <h4 class="text-xl font-semibold text-gray-900">Nama Aparat 3</h4>
+            <p class="text-gray-600">Jabatan 3</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flex flex-col items-center w-[300px] h-[300px] shadow-lg p-4 bg-white inline-block">
+          <img class="w-full h-[150px] object-cover mb-2" src="assets/tent-1.jpg" alt="Aparat Desa 4" />
+          <div class="flex flex-col items-center h-1/3 justify-center">
+            <h4 class="text-xl font-semibold text-gray-900">Nama Aparat 4</h4>
+            <p class="text-gray-600">Jabatan 4</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="flex flex-col items-center w-[300px] h-[300px] shadow-lg p-4 bg-white inline-block">
+          <img class="w-full h-[150px] object-cover mb-2" src="assets/tent-1.jpg" alt="Aparat Desa 5" />
+          <div class="flex flex-col items-center h-1/3 justify-center">
+            <h4 class="text-xl font-semibold text-gray-900">Nama Aparat 5</h4>
+            <p class="text-gray-600">Jabatan 5</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="flex flex-col items-center w-[300px] h-[300px] shadow-lg p-4 bg-white inline-block">
+          <img class="w-full h-[150px] object-cover mb-2" src="assets/tent-1.jpg" alt="Aparat Desa 6" />
+          <div class="flex flex-col items-center h-1/3 justify-center">
+            <h4 class="text-xl font-semibold text-gray-900">Nama Aparat 6</h4>
+            <p class="text-gray-600">Jabatan 6</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="flex-1 flex flex-col items-start text-left max-w-4xl">
+      <p class="text-lg font-semibold text-gray-600 mb-2">Aparat Desa</p>
+      <h2 class="text-3xl font-bold text-gray-900 mb-4">
+        Memperkenalkan <span class="text-primary-color">Aparat Desa</span>
+      </h2>
+      <p class="text-lg text-gray-700 mb-6">
+        Jelajahi inovasi dalam pengelolaan desa melalui aplikasi web desa yang dirancang khusus untuk memenuhi kebutuhan
+        administratif dan komunikasi desa.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Berita Desa Terbaru</h2>
+        <p class="text-lg text-gray-600">Ikuti perkembangan terbaru dan berita penting dari desa kami.</p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- News Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-48 object-cover" src="assets/tent-2.jpg" alt="Berita Desa 1">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Judul Berita 1</h3>
+            <p class="text-gray-600 text-sm mb-4">Tanggal: 1 September 2024</p>
+            <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt,
+              eros vel fringilla bibendum, nulla sapien fermentum odio.</p>
+            <a href="#" class="text-primary-color hover:underline">Baca Selengkapnya</a>
+          </div>
+        </div>
+
+        <!-- News Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-48 object-cover" src="assets/tent-2.jpg" alt="Berita Desa 2">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Judul Berita 2</h3>
+            <p class="text-gray-600 text-sm mb-4">Tanggal: 2 September 2024</p>
+            <p class="text-gray-700 mb-4">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#" class="text-primary-color hover:underline">Baca Selengkapnya</a>
+          </div>
+        </div>
+
+        <!-- News Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-48 object-cover" src="assets/tent-2.jpg" alt="Berita Desa 3">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Judul Berita 3</h3>
+            <p class="text-gray-600 text-sm mb-4">Tanggal: 3 September 2024</p>
+            <p class="text-gray-700 mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <a href="#" class="text-primary-color hover:underline">Baca Selengkapnya</a>
+          </div>
+        </div>
+
+        <!-- News Card 4 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-48 object-cover" src="assets/tent-2.jpg" alt="Berita Desa 4">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Judul Berita 4</h3>
+            <p class="text-gray-600 text-sm mb-4">Tanggal: 4 September 2024</p>
+            <p class="text-gray-700 mb-4">Curabitur pretium tincidunt lacus. Nulla gravida orci a erat suscipit
+              vehicula. Phasellus vel risus nec elit vulputate volutpat ut eget urna.</p>
+            <a href="#" class="text-primary-color hover:underline">Baca Selengkapnya</a>
+          </div>
+        </div>
+
+        <!-- News Card 5 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-48 object-cover" src="assets/tent-2.jpg" alt="Berita Desa 5">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Judul Berita 5</h3>
+            <p class="text-gray-600 text-sm mb-4">Tanggal: 5 September 2024</p>
+            <p class="text-gray-700 mb-4">Mauris sit amet massa at risus vehicula scelerisque. Pellentesque habitant
+              morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <a href="#" class="text-primary-color hover:underline">Baca Selengkapnya</a>
+          </div>
+        </div>
+
+        <!-- News Card 6 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img class="w-full h-48 object-cover" src="assets/tent-2.jpg" alt="Berita Desa 6">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Judul Berita 6</h3>
+            <p class="text-gray-600 text-sm mb-4">Tanggal: 6 September 2024</p>
+            <p class="text-gray-700 mb-4">Suspendisse potenti. Integer ut nulla euismod, vehicula ipsum eu, faucibus
+              erat. Sed auctor tincidunt lorem id luctus.</p>
+            <a href="#" class="text-primary-color hover:underline">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">UMKM Desa Kami</h2>
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto">Temukan berbagai usaha mikro, kecil, dan menengah di desa
+          kami. Dukung mereka dengan membeli produk lokal yang unik dan berkualitas!</p>
+      </div>
+
+      <!-- Grid Layout dengan Kartu Variatif -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 4 (Lebar penuh) -->
+        <div
+          class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white h-64 col-span-1 md:col-span-2 lg:col-span-3">
+          <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            src="assets/tent-1.jpg" alt="UMKM 5">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-xl font-semibold">UMKM 4</h3>
+            <p class="mt-1 text-sm">Aneka produk lokal berkualitas dari desa kami.</p>
+          </div>
+        </div>
+
+        <!-- Card 1 -->
+        <div
+          class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white">
+          <img class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
+            src="assets/tent-1.jpg" alt="UMKM 1">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-xl font-semibold">UMKM 1</h3>
+            <p class="mt-1 text-sm">Produk makanan ringan khas desa yang lezat dan sehat.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 (Lebih tinggi) -->
+        <div
+          class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white h-80">
+          <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            src="assets/tent-1.jpg" alt="UMKM 2">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-xl font-semibold">UMKM 2</h3>
+            <p class="mt-1 text-sm">Kerajinan tangan unik dengan sentuhan lokal yang autentik.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white">
+          <img class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
+            src="assets/tent-1.jpg" alt="UMKM 3">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-xl font-semibold">UMKM 3</h3>
+            <p class="mt-1 text-sm">Produk fashion tradisional yang nyaman dan stylish.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-gray-900 mb-4">Kegiatan Desa Kami</h2>
+        <p class="text-lg text-gray-700 max-w-2xl mx-auto">Ikuti berbagai kegiatan seru dan bermanfaat yang
+          diselenggarakan di desa kami. Bergabunglah dan menjadi bagian dari komunitas kami!</p>
+      </div>
+
+      <!-- Grid Layout untuk Kegiatan -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="relative group overflow-hidden rounded-tl-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white">
+          <img class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
+            src="assets/tent-2.jpg" alt="Kegiatan 1">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-xl font-semibold">Gotong Royong Bersih Desa</h3>
+            <p class="mt-1 text-sm">Bersama-sama membersihkan lingkungan desa untuk menjaga kebersihan dan kenyamanan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="relative group overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white">
+          <img class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
+            src="assets/tent-2.jpg" alt="Kegiatan 2">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-xl font-semibold">Pelatihan Keterampilan</h3>
+            <p class="mt-1 text-sm">Mengembangkan keterampilan warga melalui pelatihan dan workshop.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="relative group overflow-hidden rounded-tr-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white">
+          <img class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
+            src="assets/tent-2.jpg" alt="Kegiatan 3">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-xl font-semibold">Pasar Malam Desa</h3>
+            <p class="mt-1 text-sm">Nikmati suasana pasar malam dengan berbagai kuliner dan hiburan.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="relative group overflow-hidden rounded-bl-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white">
+          <img class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
+            src="assets/tent-2.jpg" alt="Kegiatan 4">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-xl font-semibold">Senam Pagi Bersama</h3>
+            <p class="mt-1 text-sm">Aktivitas olahraga bersama untuk kesehatan dan kebersamaan warga.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="relative group overflow-hidden  shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white">
+          <img class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
+            src="assets/tent-2.jpg" alt="Kegiatan 5">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-xl font-semibold">Festival Budaya Desa</h3>
+            <p class="mt-1 text-sm">Merayakan budaya lokal dengan pertunjukan seni dan makanan tradisional.</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          class="relative group overflow-hidden rounded-br-3xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 bg-white">
+          <img class="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-110"
+            src="assets/tent-2.jpg" alt="Kegiatan 6">
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+          </div>
+          <div
+            class="absolute bottom-0 left-0 p-5 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+            <h3 class="text-xl font-semibold">Pertandingan Olahraga Desa</h3>
+            <p class="mt-1 text-sm">Kompetisi olahraga untuk memupuk semangat sportivitas antarwarga.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Wilayah Desa Kami</h2>
+        <p class="text-lg text-gray-600">Jelajahi peta interaktif dan lihat detail penting wilayah desa kami di sini.
+        </p>
+      </div>
+
+      <!-- Grid Layout untuk Peta dan Detail -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Peta -->
+        <div class="relative w-full h-[500px] bg-gray-200 rounded-lg overflow-hidden shadow-lg">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.761964457871!2d105.28104781536248!3d-5.4454182397412565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40b05c0f4e7a17%3A0x1f65d51f12cfd7b7!2sKota%20Lampung!5e0!3m2!1sid!2sid!4v1685013797212!5m2!1sid!2sid"
+            class="w-full h-full border-0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Detail Wilayah -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">Detail Wilayah</h3>
+          <div class="mb-4">
+            <h4 class="text-xl font-semibold text-gray-800">Perbatasan</h4>
+            <p class="text-gray-600 mt-2">Wilayah desa kami berbatasan dengan desa-desa berikut: Desa A di utara, Desa B
+              di timur, dan Desa C di selatan. Perbatasan ini ditandai dengan batas-batas alam seperti sungai dan hutan.
+            </p>
+          </div>
+          <div class="mb-4">
+            <h4 class="text-xl font-semibold text-gray-800">Fasilitas Umum</h4>
+            <p class="text-gray-600 mt-2">Di desa kami terdapat beberapa fasilitas umum, seperti pusat kesehatan
+              masyarakat, sekolah, dan balai desa. Semua fasilitas ini terletak di lokasi strategis untuk kemudahan
+              akses.</p>
+          </div>
+          <div>
+            <h4 class="text-xl font-semibold text-gray-800">Peta Perencanaan</h4>
+            <p class="text-gray-600 mt-2">Kami juga memiliki peta perencanaan yang menunjukkan rencana pengembangan desa
+              ke depannya, termasuk lokasi untuk pembangunan infrastruktur baru dan pengembangan kawasan hijau.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-gray-100 py-12">
+    <div class="container mx-auto px-6">
+      <!-- Heading dan CTA -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-white mb-4">Sudah Siap Menjadi Bagian dari Kawal Desa?</h2>
+        <p class="text-lg text-gray-300 mb-6">Bergabunglah dengan kami dalam upaya membangun dan mengembangkan desa
+          kami. Dapatkan informasi lebih lanjut dan mulai berkontribusi hari ini!</p>
+        <a href="#contact"
+          class="bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-600 transition duration-300">Hubungi
+          Kami</a>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <!-- Navigasi -->
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4">Navigasi</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" class="hover:text-yellow-400 transition duration-300">Beranda</a></li>
+            <li><a href="#about" class="hover:text-yellow-400 transition duration-300">Tentang Kami</a></li>
+            <li><a href="#services" class="hover:text-yellow-400 transition duration-300">Layanan</a></li>
+            <li><a href="#contact" class="hover:text-yellow-400 transition duration-300">Kontak</a></li>
+          </ul>
+        </div>
+        <!-- Alamat -->
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4">Alamat</h3>
+          <p class="text-gray-300">Jl. Contoh No.123, Desa Contoh, Kode Pos 12345</p>
+          <p class="text-gray-300 mt-2">Telp: (021) 123-4567</p>
+          <p class="text-gray-300">Email: info@kawaldesa.com</p>
+        </div>
+        <!-- Ikuti Kami -->
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4">Ikuti Kami</h3>
+          <ul class="flex justify-center space-x-6">
+            <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition duration-300"><i
+                  class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition duration-300"><i
+                  class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="text-gray-300 hover:text-yellow-400 transition duration-300"><i
+                  class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <!-- Kebijakan -->
+        <div>
+          <h3 class="text-xl font-bold text-white mb-4">Kebijakan</h3>
+          <ul class="space-y-2">
+            <li><a href="#privacy" class="hover:text-yellow-400 transition duration-300">Kebijakan Privasi</a></li>
+            <li><a href="#terms" class="hover:text-yellow-400 transition duration-300">Syarat dan Ketentuan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center mt-12">
+        <p class="text-gray-500 text-sm">© 2024 Kawal Desa. Semua hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script> -->
+
+  <script for scroling>
+    document.addEventListener("DOMContentLoaded", function () {
+      const container = document.getElementById("scrolling-container");
+      const containerWidth = container.scrollWidth;
+      const viewportWidth = container.offsetWidth;
+      const scrollAmount = containerWidth - viewportWidth;
+      let scrollPosition = 0;
+      const scrollSpeed = 1;
+
+      function scroll() {
+        if (scrollPosition >= scrollAmount) {
+          scrollPosition = 0;
+        } else {
+          scrollPosition += scrollSpeed;
+        }
+        container.style.transform = `translateX(-${scrollPosition}px)`;
+        requestAnimationFrame(scroll);
+      }
+
+      scroll();
+    });
+  </script>
+
+  <script>
+    // Toggle mobile menu
+    const menuBtn = document.getElementById('menu-btn');
+    const navLinks = document.getElementById('nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+
+</html>
